@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;1,200&family=Outfit:wght@100..900&family=Roboto:wght@100&display=swap');
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+--Soft-blue: hsl(215, 51%, 70%);
+--Cyan: hsl(178, 100%, 50%);
+--Very-dark-blue-bg: hsl(217, 54%, 11%);
+--Very-dark-blue-card: hsl(216, 50%, 16%);
+--Very-dark-blue-line: sl(215, 32%, 27%);
+--White: hsl(0, 0%, 100%);
+}
+body{
+background-color: var(--Very-dark-blue-bg);
+font-size: 18px;
+font-family: "Outfit", sans-serif;
+} 
+main{
+   background-color: var(--Very-dark-blue-card);
+   width: 23%;
+   margin: auto;
+   margin-top: 90px;
+   padding: 32px;
+   border-radius: 25px;
+  box-shadow: 10px 10px 10px 5px black, 15px 15px 20px 0px rgb(255, 255, 255) ;
+}
+header img{
+      width:380px;
+      height:380px;
+      border-radius: 20px;
+     cursor: pointer;
+    }
+section{
+    padding: 18px;
+    line-height : 2.4;
+}
+
+h1{
+    color: var(--White);
+    cursor: pointer;
+}
+h1:hover{
+    color: var(--Cyan);
+}
+
+section>p{
+    color: var(--Soft-blue);
+}
+.duration img{
+    vertical-align: middle;
+}
+section span{
+    color: var(--Cyan);
+}
+section :nth-child(2){
+    color: var(--Soft-blue);
+}
+section::after{
+content: '';
+display: block;
+margin-top: 17px ;
+border: 1px solid rgba(255, 255, 255, 0.068);
+width: 360px;
+height: 0px;
+}
+footer{
+    padding: 8px;
+}
+
+footer img{
+     width: 40px;
+     height: 40px;
+     vertical-align: middle;
+     border: 1px solid white;
+     border-radius: 25px;
+}
+
+footer p span{
+ color:white;   
+ opacity: 0.2;
+ vertical-align: auto;
+
+}
+footer p{
+    color: rgb(230, 226, 226);
+    word-spacing: 3px;
+    cursor: pointer;
+
+}
+footer p:hover{
+    color: var(--Cyan);
+}
+
+
+@media (max-width:2000px) {
+   
+    main{
+        background-color: var(--Very-dark-blue-card);
+        width: 450px;
+        margin: auto;
+        margin-top: 90px;
+       
+     }
+    
+}
+
